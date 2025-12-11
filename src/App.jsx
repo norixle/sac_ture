@@ -208,8 +208,11 @@ export default function SactureLandingPictureReady() {
           >
             {/* using the logo you provided */}
             <img
-              src="/logo.png"
+              src="https://i.postimg.cc/c4qw6HTC/logo.png"
               alt="SắcTure logo"
+              onError={(e) => {
+                e.currentTarget.src = "/logo192.png";
+              }}
               className="w-10 h-10 rounded-full object-cover shadow"
             />
 
